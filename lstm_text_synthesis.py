@@ -82,9 +82,9 @@ def sample(preds, temperature=1.0):
 # train the model, output generated text after each iteration
 min_loss = 1e15
 loss_count = 0
-batch_size = 1024
+batch_size = 2048
 
-for iteration in range(1, 100):
+for iteration in range(1, 10):
     print()
     print('-' * 50)
     print('Iteration', iteration)
