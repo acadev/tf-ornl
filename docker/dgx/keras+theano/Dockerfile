@@ -1,7 +1,7 @@
 FROM dgx/theano
 
 RUN apt-get update && \
-    apt-get install -y python-yaml && \
+    apt-get install -y python-yaml libhdf5-dev && \
     rm -rf /var/lib/apt/lists/*
 
 RUN pip install keras

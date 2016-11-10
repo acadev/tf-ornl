@@ -1,7 +1,6 @@
+all: tensorflow keras-theano
 
-.PHONY cudnn5 theano tensorflow keras-theano
-
-all: ornl-tf ornl-theano
+.PHONY: cudnn5 theano tensorflow keras-theano
 
 cudnn5:
 	cd cudnn5 && docker build -t dgx/cudnn5 .
