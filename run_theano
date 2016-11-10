@@ -1,0 +1,3 @@
+#!/bin/bash
+
+NV_GPU=0 nvidia-docker run --rm -ti -e KERAS_BACKEND=theano -v $PWD:/data dgx/ornl bash
